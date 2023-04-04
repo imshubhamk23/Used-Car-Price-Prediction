@@ -11,8 +11,8 @@
 
     <div style="color:blue">
         <form action="{{ url_for('predict')}}" method="post">
-            <h2>Used Car Price Calculator by Shubham Kolekar</h2>
-            <h3>Year of Purchase</h3>
+            <h2>Predictive analysis by Shubham Kolekar</h2>
+            <h3>Year</h3>
             <input id="first" name="Year" type="number ">
             <h3>What is the Showroom Price?(In lakhs)</h3><br><input id="second" name="Present_Price" required="required">
             <h3>How Many Kilometers Drived?</h3><input id="third" name="Kms_Driven" required="required">
@@ -47,113 +47,76 @@
 
 
     <style>
+        /* Display only. Not needed! */
+
+        @import 'https://raw.githubusercontent.com/jonathantneal/system-font-css/gh-pages/system-font.css';
+
         body {
-            background-color: lightslategray;
-            text-align: center;
-            padding: 0px;
-        }
+        background: rgb(171, 172, 173) linear-gradient(22deg, aqua, dodgerblue, rgb(68, 18, 91)) fixed;
+            color: white;
+        font: normal 32px/1.6 system-ui, sans-serif,;
+            text-shadow: 0 1px 1px hsl(0 0% 0% / 20%);
+        margin: 3rem;
+        vertical-align: center;
+        text-align: center;
+        align-content: left;
+        align-content: left;
         
-        #research {
-            font-size: 18px;
-            width: 100px;
-            height: 23px;
-            top: 23px;
         }
-        
-        #box {
-            border-radius: 60px;
-            border-color: 45px;
-            border-style: solid;
-            font-family: cursive;
-            text-align: center;
-            background-color: rgb(168, 131, 61);
-            font-size: medium;
+
+        h1 {
+            font-weight: normal;
+        }
+
+        a {
+        color: inherit;
+        }
+
+        a:focus,
+        a:hover {
+        text-decoration-color: black;
+        }
+
+        input {
+        font: inherit;
+        padding: 0.2em 0.5em;
+        }
+
+        .form {
+            margin: 0 auto;
+            width: 210px;
+        }
+
+        .form label{
+            display: inline-block;
+            text-align: left;
+        }
+
+        .form input{
+            display: inline-block;
+            text-align: left;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+          }
+          
+          .dropdown-content {
+            display: none;
             position: absolute;
-            width: 700px;
-            bottom: 9%;
-            height: 850px;
-            right: 30%;
-            padding: 0px;
-            margin: 0px;
-            font-size: 14px;
-        }
-        
-        #fuel {
-            width: 83px;
-            height: 43px;
-            text-align: center;
-            border-radius: 14px;
-            font-size: 20px;
-        }
-        
-        #fuel:hover {
-            background-color: coral;
-        }
-        
-        #research {
-            width: 99px;
-            height: 43px;
-            text-align: center;
-            border-radius: 14px;
-            font-size: 18px;
-        }
-        
-        #research:hover {
-            background-color: coral;
-        }
-        
-        #resea {
-            width: 99px;
-            height: 43px;
-            text-align: center;
-            border-radius: 14px;
-            font-size: 18px;
-        }
-        
-        #resea:hover {
-            background-color: coral;
-        }
-        
-        #sub {
-            width: 120px;
-            height: 43px;
-            text-align: center;
-            border-radius: 14px;
-            font-size: 18px;
-        }
-        
-        #sub:hover {
-            background-color: darkcyan;
-        }
-        
-        #first {
-            border-radius: 14px;
-            height: 25px;
-            font-size: 20px;
-            text-align: center;
-        }
-        
-        #second {
-            border-radius: 14px;
-            height: 25px;
-            font-size: 20px;
-            text-align: center;
-        }
-        
-        #third {
-            border-radius: 14px;
-            height: 25px;
-            font-size: 20px;
-            text-align: center;
-        }
-        
-        #fourth {
-            border-radius: 14px;
-            height: 25px;
-            font-size: 20px;
-            text-align: center;
-        }
+            background-color: #f9f9f9;
+            min-width: 400px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+          }
+          
+          .dropdown:hover .dropdown-content {
+            display: block;
+          }
     </style>
+    
 </body>
 
 </html>
